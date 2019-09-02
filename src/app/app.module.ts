@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AaaComponent } from './aaa/aaa.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AaaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
