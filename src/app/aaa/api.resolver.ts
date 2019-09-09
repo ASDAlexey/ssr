@@ -11,7 +11,8 @@ export class ApiResolver implements Resolve<any> {
   resolve(route: ActivatedRouteSnapshot): Observable<any> {
     // return this.userService.show(parseInt(route.params.userId, 10)).pipe(
     return this.userService.show(1).pipe(
-      map(({ data }) => data),
+      // map(({ data }) => data),
+      map((data) => data),
       // tap(user => this.store$.dispatch(loadUserByIdSuccess({ user }))),
       catchError(error => {
         // this.store$.dispatch(logout({ refreshToken: null }));

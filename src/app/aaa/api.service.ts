@@ -7,6 +7,6 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   show(id: number): Observable<{ data: any }> {
-    return this.http.get<{ data: any }>(`https://api.sportdiary.local/users/${id}`);
+    return this.http.get<{ data: any }>(`http://dummy.restapiexample.com/api/v1/employees`);
   }
 }
